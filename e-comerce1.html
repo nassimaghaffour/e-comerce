@@ -1,0 +1,342 @@
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+      font-family: Arial, sans-serif;
+    }
+.headersection
+{
+ background-color:  beige;
+}
+.container
+{
+  /*max-width: 1200px;*/
+
+    margin: 20px auto;
+  padding-left: 20px;
+   padding-right: 20px;
+
+}
+.nvbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color:  beige;
+}
+
+.logo img
+{
+    width: 100px;
+}
+.inprechercher
+{
+    width: 30%;
+    height: 35px;
+    margin-left: 25%;
+    padding: 10px;
+    border-radius: 15px 0 0 15px;
+    border: none;
+}
+.btnrechercher
+{
+    border-radius: 0 15px 15px 0;
+      border: none;
+      height: 35px;
+      cursor: pointer;
+      background-color: #000;
+      color: bisque;
+      padding: 0 15px;
+}
+nav
+{
+    flex: 1;
+   text-align: right;
+}
+nav ul
+{
+    display: inline-block;
+    list-style: none;
+    
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a
+{
+   text-decoration: none;
+   color: rgb(40, 41, 40);
+
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.shopping
+{
+    flex-basis: 50%;
+    min-width: 300px;
+    text-align: center;
+}
+.shopping img
+{
+    width: 100%;
+    padding: 30px 0;
+}
+.shopping h1
+{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.shopping a{
+    text-decoration: none;
+    padding: 8px 30px;
+    background-color:black;
+    border-radius: 30px;
+    color: bisque;
+    transition: background 0.5s;
+  
+}
+.shopping a:hover
+{
+    background-color: rgb(64, 61, 61);
+}
+.shopping p
+{
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+/*section 2 style*/
+.categorie
+{
+    margin: 70px 0;
+}
+.container h2
+{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+  
+
+}
+.cat
+{
+    flex-basis: 30%;
+    margin: 250px;
+    margin: auto;
+}
+.cat img
+{
+    width: 100%;
+}
+.mp
+{
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 15px;
+    display: flex;
+
+}
+.mp img
+{
+    width: 100%;
+
+}
+
+#slideshow img {
+  display: none; /* Masquer toutes les images par défaut */
+  flex-basis: 50%;
+   /* min-width: 300px;*/
+  
+    width:500px;
+    
+    padding: 30px 0;
+    border-radius: 15%;
+    height: 500px;
+  
+}
+#slideshow img:first-child {
+  display: block; /* Afficher la première image */
+
+  flex-basis: 100%;
+   /* min-width: 300px;*/
+    text-align: center;
+    width:500px;
+    height:500px;
+    
+    padding: 30px 0;
+ 
+}
+
+
+</style>
+
+
+<html>
+
+    <head>
+        <title>e-comerce</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <section class="headersection">
+
+          <div class="container">
+            <header  class="nvbar">
+                <div class="logo">
+                    <img src="./image/logo.png" alt="">
+                </div>
+                <input class="inprechercher" type="text"placeholder="Rechercher">
+                <button class="btnrechercher"><span class="material-symbols-outlined">
+                    search
+                </span></button>
+                <nav>
+                    <ul>
+                        <li><a href="lien1.html">Acceuil</a></li>
+                        <li><a href="lien2.html">Les plus vendus</a></li>
+                        <li><a href="lien3.html">Nouveuté</a></li>
+                        <li><a href="lien3.html"><span class="material-symbols-outlined">
+                            shopping_cart
+                            </span></a></li>
+
+                    </ul>
+                </nav>
+           
+            </header>
+            <div class="row">
+                <div class="shopping">
+                    <h1>achri m3ana</h1>
+                    <p>lfsflajoêjjDDGGzeggsgzegzeg</p>
+                    <a href="">Explorer maintenant&#8594;</a>
+                </div>
+                <!--
+                    <div class="shopping">
+                    <img src="./image/shopping.avif" alt="">
+                </div>
+                !-->
+                <div id="slideshow">
+                    <img src="./image/adidas1.jpg" alt="Image 1">
+                    <img src="./image/adidaspontalon.jpg" alt="Image 2">
+                    <img src="./image/adidasfille.jpg" alt="Image 3">
+                  </div>
+            </div>
+          </div>
+      </section> 
+
+
+      <section class="categorie">
+        <div class="container">
+
+         <h2>Nouveautés</h2>
+          <div class="row">
+            <div class="cat">
+                <img src="./image/adidas1.jpg" alt="">
+            </div>
+            <div class="cat">
+                <img src="./image/adidastshirt.jpg" alt="">
+            </div>
+            <div class="cat">
+                <img src="./image/adidaspontalon.jpg" alt="">
+            </div>
+
+
+
+
+
+          </div>
+       </div>
+
+
+      </section>
+
+      <section class="lesplusvendus">
+        <div class="container">
+          <h2>les plus vendus </h2>
+            <div class="row">
+                <div class="mp">
+                    <div class="separation">
+                        <img src="./image/vestehomme.jpg" alt="">
+                        <h3>veste bleu</h3>
+                        <p>5000 DA</p>
+                    </div>
+                    <a href="lien3.html"><span class="material-symbols-outlined">
+                        shopping_cart
+                        </span></a>
+                  </div>
+                  <div class="mp">
+                    <div class="separation">
+                        <img src="./image/vestehomme.jpg" alt="">
+                        <h3>veste bleu</h3>
+                        <p>5000 DA</p>
+                    </div>
+                    <a href="lien3.html"><span class="material-symbols-outlined">
+                        shopping_cart
+                        </span></a>
+                  </div>
+                  <div class="mp">
+                    <div class="separation">
+                        <img src="./image/vestehomme.jpg" alt="">
+                        <h3>veste bleu</h3>
+                        <p>5000 DA</p>
+                    </div>
+                    <a href="lien3.html"><span class="material-symbols-outlined">
+                        shopping_cart
+                        </span></a>
+                  </div>
+              <div class="mp">
+                <div class="separation">
+                    <img src="./image/vestehomme.jpg" alt="">
+                    <h3>veste bleu</h3>
+                    <p>5000 DA</p>
+                </div>
+                <a href="lien3.html"><span class="material-symbols-outlined">
+                    shopping_cart
+                    </span></a>
+              </div>
+           </div>
+         
+        </div>
+
+
+      </section>
+      <script>
+        // Sélectionner le conteneur du diaporama
+var slideshow = document.getElementById("slideshow");
+
+// Sélectionner toutes les images dans le diaporama
+var images = slideshow.getElementsByTagName("img");
+
+// Variables pour suivre l'index de l'image actuelle
+var currentImageIndex = 0;
+var totalImages = images.length;
+
+// Fonction pour passer à l'image suivante
+function nextImage() {
+  // Masquer l'image actuelle
+  images[currentImageIndex].style.display = "none";
+
+  // Passer à l'index de l'image suivante
+  currentImageIndex = (currentImageIndex + 1) % totalImages;
+
+  // Afficher l'image suivante
+  images[currentImageIndex].style.display = "block";
+
+  // Délai pour passer à l'image suivante (en millisecondes)
+  setTimeout(nextImage, 3000); // Changer d'image toutes les 3 secondes
+}
+
+// Appeler la fonction pour démarrer le diaporama
+nextImage();
+    </script>
+    </body>
+</html>
